@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Merienda";
+    text-transform: capitalize;
+}
+
+.navbar{
+
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(155, 33, 231);
+}
+
+.logo{
+
+        width: 300px;
+        height: 87px;
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px black,
+        0 0 1em rgb(209, 237, 67),
+        0 0 0.2em rgb(255, 247, 0);;
+}
+
+.searchbar{
+        
+    display: flex;
+    height: 57px;
+    margin-top: 15px;
+    /* border-radius: 10px 10px 10px 10px; */
+}
+
+.optional{
+
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 8px 0px 0px 8px;
+    border: 2px solid #fff;
+}
+
+.searchbar input{
+
+    width: 600px;
+    outline: none;
+    font-size: 1.3rem;
+    border: 2px solid #fff;
+    /* border-radius:10px 0px 0px 10px; */
+}
+
+.search-icon{
+
+        width: 70px;
+        border-radius: 0px 8px 8px 0px ;
+        background-color: #fff
+}
+
+.search-icon .fa-solid{
+
+    color:#406680;
+    padding: 12px;
+    font-size: 30px;   
+}
+
+.language-bar{
+
+    color: #fff;
+    height: 57px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: rgb(155, 33, 231);
+
+}
+
+.language-bar:hover{
+
+    border: 2px solid rgb(155, 33, 231);
+}
+
+.login-Btn{
+        width: 80px;
+        height: 57px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 25px;
+        border: 2px solid transparent;
+        
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.information{
+
+    height: 30px;
+    background-color: #540486;
+}
+
+.login-container {
+    max-width: 920px;
+    width: 100%;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #540486;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
