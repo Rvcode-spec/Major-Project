@@ -1,73 +1,64 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family:"Merienda";
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merienda";
     text-transform: capitalize;
 }
 
-.navbar{
-
-        height: auto;
-        display: flex;
-        justify-content: space-evenly;
-        background-color: rgb(155, 33, 231);
+/* Navbar styling */
+.navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(155, 33, 231);
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
-.logo{
-
-        width: 300px;
-        height: 87px;
-        color: #fff;
-        font-size: 50px;
-        text-align: center;
-        margin-top: 10px;
-        font-weight: 700;
-        text-shadow: 1px 1px 2px black,
-        0 0 1em rgb(209, 237, 67),
-        0 0 0.2em rgb(255, 247, 0);;
+/* Logo styling */
+.logo {
+    width: 300px;
+    height: auto;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(209, 237, 67), 0 0 0.2em rgb(255, 247, 0);
 }
 
-.searchbar{
-        
+/* Searchbar styling */
+.searchbar {
     display: flex;
     height: 57px;
     margin-top: 15px;
-    /* border-radius: 10px 10px 10px 10px; */
 }
 
-.optional{
-
-    outline: none;
-    font-size: 1.3rem;
-    border-radius: 8px 0px 0px 8px;
-    border: 2px solid #fff;
-}
-
-.searchbar input{
-
-    width: 600px;
+/* Input field styling */
+.searchbar input {
+    width: 100%;
     outline: none;
     font-size: 1.3rem;
     border: 2px solid #fff;
-    /* border-radius:10px 0px 0px 10px; */
 }
 
-.search-icon{
-
-        width: 70px;
-        border-radius: 0px 8px 8px 0px ;
-        background-color: #fff
+/* Optional styling */
+.optional {
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 8px 0 0 8px;
+    border: 2px solid #fff;
 }
 
-.search-icon .fa-solid{
-
-    color:#406680;
-    padding: 12px;
-    font-size: 30px;   
+/* Search icon styling */
+.search-icon {
+    width: 70px;
+    border-radius: 0 8px 8px 0;
+    background-color: #fff;
 }
 
-.language-bar{
-
+/* Language bar styling */
+.language-bar {
     color: #fff;
     height: 57px;
     outline: none;
@@ -76,36 +67,45 @@
     border-radius: 5px;
     border: 2px solid transparent;
     background-color: rgb(155, 33, 231);
-
 }
 
-.language-bar:hover{
-
+.language-bar:hover {
     border: 2px solid rgb(155, 33, 231);
 }
 
-.login-Btn{
-        width: 80px;
-        height: 57px;
-        text-align: center;
-        font-size: 18px;
-        margin-top: 25px;
-        border: 2px solid transparent;
-        
+/* Login button styling */
+.login-Btn {
+    width: 80px;
+    height: 57px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+    border: 2px solid transparent;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .searchbar input {
+        width: 80%;
+    }
+
+    .search-icon {
+        width: 50px;
+    }
+
+    .language-bar, .login-Btn {
+        font-size: 14px;
+        width: auto;
+   
+    }
 }
 
 
-.information{
-
-    height: 30px;
-    background-color: #540486;
-}
-
+/* Signup page container */
 
 .singup-page{
 
@@ -146,4 +146,33 @@ a{
     font-size: 30px; /* Adjust size as needed */
     text-align: center;
     z-index: 1; /* Ensures h1 is above the image */
+}
+
+@media (max-width: 168px) {
+    .singup-page {
+        flex-direction: column; /* Stacks image and form vertically */
+        width: 90%; /* Takes most of the screen width */
+        height: auto;
+    }
+
+    .image-container img {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px; /* Adjusts for the vertical layout */
+        border-bottom-left-radius: 0;
+    }
+
+    .image-container h1 {
+        font-size: 24px; /* Reduces font size for smaller screens */
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%); /* Centers the heading */
+    }
+}
+
+/* Media query for very small screens (e.g., phones, 480px and below) */
+@media (max-width: 480px) {
+    .image-container h1 {
+        font-size: 20px; /* Further reduces font size */
+        top: 5%;
+    }
 }
