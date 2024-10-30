@@ -106,21 +106,44 @@ a{
     background-color: #540486;
 }
 
-.login-container {
-    max-width: 920px;
-    width: 100%;
-    height: 50vh;
+
+.singup-page{
+
+    width: 100px;
+    height: 500px;
+    /* max-width: 900px; */
+    min-width: 1300px;
+    display: flex;
+    position: fixed;
     top: 50%;
     left: 50%;
-    position: fixed;
-    border-radius: 20px;
+    border-radius: 6px;
     transform: translate(-50%, -50%);
     background-color: #540486;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* margin: 10px 5px 10px 6px; */
 }
 
+.image-container, .form-container {
+    flex: 2; /* Each takes up 50% of the container */
+    position: relative;  /* Required for absolute positioning of h1 */
+}
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
 
-
+.image-container h1 {
+    position: absolute;
+    top: 7%;
+    text-align: center;
+    left: 20%;
+    /* transform: translate(-50%, -50%); */
+    color: #33caf0;
+    font-size: 30px; /* Adjust size as needed */
+    text-align: center;
+    z-index: 1; /* Ensures h1 is above the image */
+}
