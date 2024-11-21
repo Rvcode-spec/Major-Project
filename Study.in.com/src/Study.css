@@ -4,6 +4,7 @@
     padding: 0;
     font-family: "Merienda";
     text-transform: capitalize;
+    
 }
 
 /* Navbar styling */
@@ -13,7 +14,39 @@
     justify-content: space-evenly;
     background-color: rgb(155, 33, 231);
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 10px 20px;
+    align-items: center; /* Ensures proper vertical alignment */
 }
+
+/* Navbar */
+/* ---------------------------------------------------------------- */
+/* Responsive for Phones (Small Screens) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items */
+        align-items: center;
+    }
+    .searchbar {
+        width: 90%; /* Adjust search bar width */
+        margin-top: 10px;
+    }
+}
+
+/* Responsive for Tablets and Laptops (Medium Screens) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px; /* Adjust padding */
+    }
+    .searchbar {
+        width: 70%; /* Make search bar slightly smaller */
+        margin-top: 10px;
+    }
+    .language-bar, .login-Btn {
+        font-size: 14px; /* Slightly reduce font size */
+        width: auto; /* Adjust for smaller containers */
+    }
+}
+
 
 /* Logo styling */
 .logo {
@@ -27,35 +60,99 @@
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(209, 237, 67), 0 0 0.2em rgb(255, 247, 0);
 }
 
-/* Searchbar styling */
-.searchbar {
-    display: flex;
-    height: 57px;
-    margin-top: 15px;
+/* Logo  */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8rem; /* Reduce font size for small screens */
+        text-shadow: 1px 1px 1px black, 0 0 0.5em rgb(209, 237, 67), 0 0 0.1em rgb(255, 247, 0);
+        margin-top: 5px; /* Adjust spacing */
+    }
 }
 
-/* Input field styling */
-.searchbar input {
-    width: 100%;
-    outline: none;
-    font-size: 1.3rem;
-    border: 2px solid #fff;
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 2rem; /* Slightly smaller font size for tablets/laptops */
+        margin-top: 8px; /* Adjust margin for better spacing */
+    }
 }
+
 
 /* Optional styling */
 .optional {
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 8px 0 0 8px;
     border: 2px solid #fff;
 }
 
-/* Search icon styling */
+/* Responsive Optional */
+@media (max-width: 480px) {
+    .optional {
+        font-size: 1rem; /* Slightly smaller font size on small screens */
+        max-width: 90%; /* Fit within the smaller screen width */
+    }
+}
+
+@media (max-width: 1024px) {
+    .optional {
+        font-size: 1.2rem; /* Adjust for medium-sized screens */
+        max-width: 80%; /* Scale width appropriately for tablets */
+    }
+}
+
+
+/* Searchbar styling */
+
+.searchbar {
+    display: flex;
+    height: 57px;
+    margin-top: 15px;
+    /* background-color: #111111; */
+}
+
+
+
+/* Input field styling */
+.searchbar input {
+    width: 100%; /* Full width within the parent container */
+    max-width: 400px; /* Limits the width on larger screens */
+    outline: none;
+    font-size: 1rem; /* Readable font size */
+    border: 2px solid #fff;
+    border-radius: 0px 0px 0px  0px ; /* Smooth corners for a modern look */
+    padding: 8px 12px; /* Comfortable padding inside the input */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .searchbar input {
+        font-size: 1rem; /* Slightly smaller font size on narrow screens */
+        width: 90%; /* Takes most of the screen width */
+    }
+}
+
+@media (max-width: 1024px) {
+    .searchbar input {
+        font-size: 1.2rem; /* Balanced font size for tablets/laptops */
+        max-width: 80%; /* Adjust width for larger mid-sized screens */
+    }
+}
+
+
 .search-icon {
     width: 70px;
     border-radius: 0 8px 8px 0;
     background-color: #fff;
 }
+
+.search-icon .fa-magnifying-glass{
+
+        padding: 18px;
+        font-size: 22px;
+       color:  rgb(155, 33, 231);
+}
+
 
 /* Language bar styling */
 .language-bar {
@@ -76,43 +173,32 @@
 /* Login button styling */
 .login-Btn {
     width: 80px;
-    height: 57px;
+    height: 37px;
+    color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 25px;
+    cursor: pointer; 
+    transition: none;
     border: 2px solid transparent;
+
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .logo {
-        font-size: 2rem;
-    }
+/* Login-Btn */
 
-    .searchbar input {
-        width: 80%;
-    }
-
-    .search-icon {
-        width: 50px;
-    }
-
-    .language-bar, .login-Btn {
-        font-size: 14px;
-        width: auto;
-   
+@media (max-width: 480px) {
+    .login-Btn {
+        width: auto; /* Adjust width to fit text */
+        padding: 5px 10px; /* Add inner spacing for smaller screens */
+        font-size: 16px; /* Reduce font size slightly */
     }
 }
-
-
-/* Signup page container */
 
 .singup-page{
 
-    width: 100px;
-    height: 500px;
-    /* max-width: 900px; */
-    min-width: 1300px;
+    width: 400px;
+    height: 300px;
+    min-width: 900px;
     display: flex;
     position: fixed;
     top: 50%;
@@ -120,63 +206,32 @@
     border-radius: 6px;
     transform: translate(-50%, -50%);
     background-color: rgb(155, 33, 231);
-    /* margin: 10px 5px 10px 6px; */
+    
 }
 
 .image-container, .form-container {
-    flex: 2; /* Each takes up 50% of the container */
+    flex: 1; /* Each takes up 50% of the container */
     position: relative;  /* Required for absolute positioning of h1 */
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    /* object-fit: cover; */
+    /* border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; */
 }
 
 .image-container h1 {
     position: absolute;
     top: 7%;
-    text-align: center;
     left: 20%;
-    /* transform: translate(-50%, -50%); */
     color: #33caf0;
-    font-size: 30px; /* Adjust size as needed */
     text-align: center;
-    z-index: 1; /* Ensures h1 is above the image */
+    font-size: 22px; /* Adjust size as needed */
+    text-align: center;
+    
 }
-
-@media (max-width: 168px) {
-    .singup-page {
-        flex-direction: column; /* Stacks image and form vertically */
-        width: 90%; /* Takes most of the screen width */
-        height: auto;
-    }
-
-    .image-container img {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px; /* Adjusts for the vertical layout */
-        border-bottom-left-radius: 0;
-    }
-
-    .image-container h1 {
-        font-size: 24px; /* Reduces font size for smaller screens */
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%); /* Centers the heading */
-    }
-}
-
-/* Media query for very small screens (e.g., phones, 480px and below) */
-@media (max-width: 480px) {
-    .image-container h1 {
-        font-size: 20px; /* Further reduces font size */
-        top: 5%;
-    }
-}
-
 
 .form-container {
     display: flex;
