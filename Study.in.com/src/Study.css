@@ -45,6 +45,7 @@
 /* Searchbar styling */
 .searchbar {
     display: flex;
+    width: 40%;
     height: 57px;
     margin-top: 15px;
     /* background-color: #111111; */
@@ -53,7 +54,7 @@
 /* Input field styling */
 .searchbar input {
     width: 100%; /* Full width within the parent container */
-    max-width: 400px; /* Limits the width on larger screens */
+    max-width: 900px; /* Limits the width on larger screens */
     outline: none;
     font-size: 1rem; /* Readable font size */
     border: 2px solid #fff;
@@ -114,7 +115,7 @@
     min-width: 950px;
     display: flex;
     position: fixed;
-    top: 60%;
+    top: 55%;
     left: 50%;
     border-radius: 6px;
     transform: translate(-50%, -50%);
@@ -158,6 +159,20 @@
     flex-direction: column; /* Stack inputs vertically */
 }
 
+.form-container .close-icon {
+
+        width: 30px;
+        height: 10px;
+        /* justify-content: end;
+        align-items: end; */
+        display: flex;
+        cursor: pointer; /* Makes it clear that it’s clickable */
+        position: absolute; /* To place it in a specific corner */
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        /* background-color: #fff; */
+}
+
 .form-container h2 {
 
     text-align: center;
@@ -168,7 +183,7 @@
     width: 50%;
     height: 40px;
     border-radius: 6px;
-    margin: 20px 20px 10px 20px;
+    margin: 15px 18px 5px 20px;
     padding: 0 10px;
     border: none;
     outline: none;
@@ -189,8 +204,8 @@
 
 .form-container button{
 
-    width: 32%;
-    height: 30px;
+    width: 35%;
+    height: 35px;
     outline: none;
     border: none;
     border-radius: 4px;
@@ -207,7 +222,7 @@
     min-width: 950px;
     display: flex;
     position: fixed;
-    top: 60%;
+    top: 55%;
     left: 50%;
     border-radius: 6px;
     transform: translate(-50%, -50%);
