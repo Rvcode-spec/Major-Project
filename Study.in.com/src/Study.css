@@ -107,6 +107,31 @@
 
 }
 
+/* Infromation-Bar */
+
+.information{
+
+        height: 25px;
+        display: flex;
+        color: #fff;
+        background-color: rgb(46, 7, 71);
+}
+
+
+.information .material-symbols-outlined{
+
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67), 
+    0 0 0.2em rgb(255, 247, 0);
+
+    
+}
+
+
 /* Login-Container full Code and Responsive */
 .Login-Container{
 
