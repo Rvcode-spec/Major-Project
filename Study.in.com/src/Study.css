@@ -111,24 +111,28 @@
 
 .information{
 
-        height: 25px;
+        height: 30px;
+        width: 100%;
         display: flex;
         color: #fff;
         background-color: rgb(46, 7, 71);
 }
 
 
-.information .material-symbols-outlined{
+.information .info-icon{
+
+        width: 100px;
+}
+
+.info-icon .material-symbols-outlined{
 
     font-size: 20px;
-    margin-top: 5px;
-    margin-left: 50px;
+    margin-top: 5.5px;
+    margin-left: 30px;
     color: #fff;
     text-shadow: 1px 1px 2px black, 
     0 0 1em rgb(209, 237, 67), 
     0 0 0.2em rgb(255, 247, 0);
-
-    
 }
 
 
@@ -147,10 +151,25 @@
     background-color: rgb(155, 33, 231);
 }
 
-/* .Login-Container{
+.Login-Container .form-container {
+    position: relative;
+}
 
+#login-form, #signup-form {
+    position: absolute;
+    top: 10;
+    left:   0;
+    width: 100%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#login-form {
+    display: block;
+}
+
+#signup-form {
     display: none;
-} */
+}
 
  .image-container, .form-container {
     flex: 1; /* Each takes up 50% of the container */
@@ -240,6 +259,9 @@
     font-size: 18px;
 }
 
+
+/* --------------------------------------------------------------------- */
+
 .Signup-Container{
 
     width: 60%;
@@ -254,8 +276,3 @@
     background-color: rgb(155, 33, 231);
     
 }
-
-/* .Signup-Container{
-
-    display: none;
-} */

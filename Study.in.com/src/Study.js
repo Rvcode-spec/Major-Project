@@ -1,15 +1,11 @@
-function showSignup() {
-    document.querySelector("container1").display = "block";
-    document.querySelector("container2").display = "flex"; // Show Signup container
-}
+document.getElementById("to-signup").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent page reload
+    document.getElementById("login-form").style.display = "none";
+    document.getElementById("signup-form").style.display = "block";
+});
 
-function showLogin() {
-    document.querySelector("container2").display = "block";
-    document.querySelector("container1").display = "flex"; // Show Login container
-}
-
-
-function goToNext() {
-    // Redirect to the desired page
-    window.location.href = "/Study.in-H/first.html";
-}
+document.getElementById("to-login").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent page reload
+    document.getElementById("signup-form").style.display = "none";
+    document.getElementById("login-form").style.display = "block";
+});
