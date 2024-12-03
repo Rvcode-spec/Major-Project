@@ -136,7 +136,8 @@
 
 .Login-main-box{
 
-        display: flex;
+        display: none;
+        position: fixed;
         width: 60%;
         height: 350px;
         min-width: 950px;
@@ -183,7 +184,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    /* background-color: #fff; */
+    background-color: #1cc232;
     /* flex-direction: column; */
 
 }
@@ -198,6 +199,8 @@
     right: 10px; /* Adjust as needed */
 }
 
+
+
 .form-container form h3{
 
     text-align: center;
@@ -206,7 +209,6 @@
 }
 
  form input {
-    display: flex;
     justify-content: center;
     width: 80%;
     height: 40px;
@@ -246,5 +248,4 @@ form button {
     font-size: 18px;
     
 }
-
 
