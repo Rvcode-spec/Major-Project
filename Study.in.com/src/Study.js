@@ -1,25 +1,16 @@
-// JavaScript to handle the sign up link click
-document.getElementById("showSignup").addEventListener("click", function(event) {
-    event.preventDefault(); // Default link behavior ko rokein
-    document.getElementById("container1").style.display = "none"; // Login container ko chhupa dein
-    document.getElementById("container2").style.display = "block"; // Signup container ko dikhayein
+// Select elements
+const loginBox = document.getElementById('loginBox');
+const signUpBox = document.getElementById('signUpBox');
+const closeIcons = document.querySelectorAll('.close-icon');
+
+// Event listeners for close icons
+closeIcons.forEach(icon => {
+    icon.addEventListener('click', function() {
+        loginBox.style.display = 'none';
+        signUpBox.style.display = 'none';
+    });
 });
 
-// JavaScript to handle the log in link click
-document.getElementById("showLogin").addEventListener("click", function(event) {
-    event.preventDefault(); // Default link behavior ko rokein
-    document.getElementById("container2").style.display = "none"; // Signup container ko chhupa dein
-    document.getElementById("container1").style.display = "block"; // Login container ko dikhayein
-});
 
-// // JavaScript to handle the close icon click in Signup-Container
-// document.querySelector("#container2 .close-icon").addEventListener("click", function() {
-//     document.getElementById("container2").style.display = "none"; // Signup container ko chhupa dein
-//     document.getElementById("container1").style.display = "block"; // Login container ko dikhayein
-// });
 
-// // JavaScript to handle the close icon click in Login-Container
-// document.querySelector("#container1 .close-icon").addEventListener("click", function() {
-//     document.getElementById("container1").style.display = "none"; // Login container ko chhupa dein
-//     document.getElementById("container2").style.display = "block"; // Signup container ko dikhayein
-// });
+
