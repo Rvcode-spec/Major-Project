@@ -9,7 +9,7 @@
 
 .nav-box{
                 width: 100dvi;
-                height: 87;
+                height: auto;
                 display: flex;
                 justify-content: space-evenly;
                 background-color: rgb(155, 33, 231);

@@ -1,0 +1,35 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merienda";
+    text-transform: capitalize;
+    
+}
+
+/* Navbar styling */
+.navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(155, 33, 231);
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    padding: 10px 20px;
+    align-items: center; /* Ensures proper vertical alignment */
+}
+
+
+
+/* Logo styling */
+.logo {
+    width: 300px;
+    height: auto;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67),
+    0 0 0.2em rgb(255, 247, 0);
+}
