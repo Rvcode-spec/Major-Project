@@ -89,39 +89,26 @@
 }
 
 
-/* Login-Btn */
+/* ------------------------------------------------------------------------------- */
 
-@media (max-width: 480px) {
-    .login-Btn {
-        width: auto; /* Adjust width to fit text */
-        padding: 5px 10px; /* Add inner spacing for smaller screens */
-        font-size: 16px; /* Reduce font size slightly */
-    }
-}
-
-@media (max-width: 468px) {
-    .singup-page {
-        flex-direction: column; /* Stacks elements vertically */
-        height: auto; /* Dynamic height */
-    }
-
-    .image-container {
-        flex: none;
-        width: 100%; /* Full width for images */
-        border-radius: 6px 6px 0 0; /* Adjust for vertical stacking */
-    }
-
-    .form-container {
-        width: 100%; /* Takes up full width */
+/* Login box  */
+/* * Media Queries for Responsive Design */ 
+@media (max-width: 768px) {
+    .Login-main-box {
+        width: 300px;
     }
 }
 
 @media (max-width: 480px) {
-    .image-container h1 {
-        font-size: 18px; /* Smaller font size for narrow screens */
+    .Login-main-box {
+        width: 90%;
     }
 
-    .form-container input {
-        width: 90%; /* Adapts for smaller screens */
+    .img-box h1 {
+        font-size: 18px;
+    }
+
+    .form-container h3 {
+        font-size: 16px;
     }
 }
