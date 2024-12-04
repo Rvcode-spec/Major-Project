@@ -20,6 +20,30 @@ closeIcons.forEach(icon => {
     });
 });
 
+const signUpBtn = document.getElementById('showSignUpBox');
+const loginBtn2 = document.getElementById('showLoginBox');
+
+signUpBtn.addEventListener('click', () => {
+    if (signUpBox.style.display === 'block') {
+        signUpBox.style.display = 'none';
+    } else {
+        signUpBox.style.display = 'block';
+        // loginBox.style.display = 'none'; // Hide login box
+    }
+});
+
+loginBtn2.addEventListener('click', () => {
+    if (loginBox.style.display === 'none') {
+        loginBox.style.display = 'block';
+        // console.log("hello");
+        
+    } else {
+        loginBox.style.display = 'block';
+        // console.log("function is not run");
+        signUpBox.style.display = 'none';
+        
+    }
+});
 
 
 
