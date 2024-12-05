@@ -9,6 +9,7 @@
 
 /* Navbar styling */
 .navbar {
+    width: 100dvi;
     height: auto;
     display: flex;
     /* justify-content: space-evenly; */
@@ -94,3 +95,40 @@ text-decoration: none;
     background-color: rgb(46, 7, 71);
 }
 
+
+.uer-information{
+
+    display: flex;
+    height: 57px;
+    margin-top: 15px;
+    border-radius: 7px 7px 7px 7px;
+    background-color:  rgb(155, 33, 231);
+    /* background-color: #fff; */
+}
+
+
+
+.uer-information ul{
+
+        font-size: 1rem;
+        margin-top: 15px;
+        
+      
+        /* text-transform:capitalize; */
+}
+
+.uer-information li{
+
+display: inline;
+
+}
+
+
+.uer-information a{
+
+color: #fff;
+padding: 14px;
+text-align: center;
+text-decoration: none;
+
+}
