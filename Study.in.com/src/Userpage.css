@@ -95,40 +95,49 @@ text-decoration: none;
     background-color: rgb(46, 7, 71);
 }
 
-
-.uer-information{
+.uerbox{
 
     display: flex;
-    height: 57px;
-    margin-top: 15px;
-    border-radius: 7px 7px 7px 7px;
-    background-color:  rgb(155, 33, 231);
+    position: relative;
+    width: 100dvi;
+    height: auto;
+    /* background-color: aqua; */
+}
+
+.uer-header{
+
+    display: flex;
+    position: relative;
+    width: 1000%;
+    height: auto;
+    background-color: rgb(155, 33, 231);    
+}
+
+.uer-header img{
+
+        width: 300px;         /* Diameter of the circle */
+        height: 300px; 
+        padding: 40px; 
+        margin-left: 50px;      /* Diameter of the circle */
+        /* background-color: #3498db; Circle color */
+        border-radius: 50%;  /* Makes it a circle */
+
+}
+
+.uer-header h1{
+
+    display: flex;
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
     /* background-color: #fff; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67),
+    0 0 0.2em rgb(255, 247, 0);
 }
 
-
-
-.uer-information ul{
-
-        font-size: 1rem;
-        margin-top: 15px;
-        
-      
-        /* text-transform:capitalize; */
-}
-
-.uer-information li{
-
-display: inline;
-
-}
-
-
-.uer-information a{
-
-color: #fff;
-padding: 14px;
-text-align: center;
-text-decoration: none;
-
-}
