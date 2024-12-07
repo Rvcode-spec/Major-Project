@@ -96,7 +96,7 @@ text-decoration: none;
     background-color: rgb(46, 7, 71);
 }
 
-.uerbox{
+.userbox{
 
     display: flex;
     margin-top: 8%;
@@ -106,7 +106,7 @@ text-decoration: none;
     /* background-color: aqua; */
 }
 
-.uer-header{
+.user-header{
 
     display: flex;
     position: relative;
@@ -116,7 +116,7 @@ text-decoration: none;
     background-color: rgb(155, 33, 231);    
 }
 
-.uer-header img{
+.user-header img{
 
         width: 300px;         /* Diameter of the circle */
         height: 300px; 
@@ -127,7 +127,7 @@ text-decoration: none;
 
 }
 
-.uer-header h1{
+.user-header h1{
 
     display: flex;
     width: 80%;
