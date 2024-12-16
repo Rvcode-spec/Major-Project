@@ -127,36 +127,31 @@
     height: 67px;
     margin-top: -50%;
     display: flex;
+    border-radius: 4px;
     justify-content: space-evenly;
-    background-color: #d81a1a;
+    /* background-color: #d81a1a; */
 
 }
 
-.class-select {
+.class-select, 
+.chapter-select, 
+.language-select {
         width: 25%;
         height: 65%;
+        outline: none;
+        border-radius: 2px;
+        border: none;
         margin-top: 10px;
+        background-color: #fff;
         
     }
 
-
-    .chapter-select {
-        width: 30%;
-        height: 65%;
-        margin-top: 10px;
-        
-    }
-
-    .language-select {
-        width: 30%;
-        height: 65%;
-        margin-top: 10px;
-        
-    }
-    .class-select option {
-        background-color: rgb(212, 224, 224); /* Background color */
-        color: black; /* Text color */
-    }
+.class-select option,
+.chapter-select option,
+.language-select option {
+    background-color: rgb(212, 224, 224); /* Background color */
+    color: black; /* Text color */
+}
 
 .dropdown{
     width: 25%;
