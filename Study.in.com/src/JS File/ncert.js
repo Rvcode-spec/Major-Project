@@ -1,53 +1,3 @@
-// Select elements
-const loginBox = document.getElementById('loginBox');
-const signUpBox = document.getElementById('signUpBox');
-const closeIcons = document.querySelectorAll('.close-icon');
-const loginBtn = document.querySelector('.login-Btn');
-
-loginBtn.addEventListener('click', () => {
-    if (loginBox.style.display === 'block') {
-        loginBox.style.display = 'none';
-    } else {
-        loginBox.style.display = 'block';
-    }
-});
-
-// Event listeners for close icons
-closeIcons.forEach(icon => {
-    icon.addEventListener('click', function() {
-        loginBox.style.display = 'none';
-        signUpBox.style.display = 'none';
-    });
-});
-
-const signUpBtn = document.getElementById('showSignUpBox');
-const loginBtn2 = document.getElementById('showLoginBox');
-
-signUpBtn.addEventListener('click', () => {
-    if (signUpBox.style.display === 'block') {
-        signUpBox.style.display = 'none';
-    } else {
-        signUpBox.style.display = 'block';
-        // loginBox.style.display = 'none'; // Hide login box
-    }
-});
-
-loginBtn2.addEventListener('click', () => {
-    if (loginBox.style.display === 'none') {
-        loginBox.style.display = 'block';
-        // console.log("hello");
-        
-    } else {
-        loginBox.style.display = 'block';
-        // console.log("function is not run");
-        signUpBox.style.display = 'none';
-        
-    }
-});
-
-
-// --------------------------title ncert book----------
-
 const classData = {
     6: {
         subjects: {
@@ -142,7 +92,30 @@ const classData = {
          });
      }
  });
- console.log("Selected Class:", selectedClass);
- console.log("Subjects:", classData[selectedClass]?.subjects);
- console.log("Selected Subject:", selectedSubject);
+//  console.log("Selected Class:", selectedClass);
+//  console.log("Subjects:", classData[selectedClass]?.subjects);
+//  console.log("Selected Subject:", selectedSubject);
  
+// -------------------------------------show the text-box-----------------------
+
+const searchIcon = document.getElementById("searchIcon");
+const textBox = document.getElementById("textBox");
+const errorMessage = document.getElementById("errorMessage");
+
+        // Add click event to the search icon
+        searchIcon.addEventListener("click", () => {
+            const isClassSelected = classSelect.value !== "";
+            const isSubjectSelected = subjectSelect.value !== "";
+            const isLanguageSelected = languageSelect.value !== "";
+
+            if (isClassSelected && isSubjectSelected && isLanguageSelected) {
+                errorMessage.style.display = "none"; // Hide error if all are selected
+                textBox.classList.add("active"); // Show the text box
+                alert("All selections are complete. Proceeding!");
+                // Optionally redirect to another page
+                // window.location.href = "nextpage.html";
+            } else {
+                errorMessage.style.display = "block"; // Show error message
+                textBox.classList.remove("active"); // Ensure text box is hidden
+            }
+});
