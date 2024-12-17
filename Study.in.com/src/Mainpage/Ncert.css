@@ -134,7 +134,7 @@
 }
 
 .class-select, 
-.chapter-select, 
+.subject-select, 
 .language-select {
         width: 25%;
         height: 65%;
@@ -147,7 +147,7 @@
     }
 
 .class-select option,
-.chapter-select option,
+.subject-select option,
 .language-select option {
     background-color: rgb(212, 224, 224); /* Background color */
     color: black; /* Text color */
