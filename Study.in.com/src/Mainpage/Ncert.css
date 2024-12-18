@@ -117,6 +117,17 @@
     padding: 10px;
     margin-top: 10px;
     margin-left: 10%;
+    color: #fff;
+    font-family: 'Open Sans';
+    z-index: 999;
+}
+
+.text-box img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-size: cover; /* Optional */
+    background-repeat: no-repeat; /* Optional */
 }
 
 
