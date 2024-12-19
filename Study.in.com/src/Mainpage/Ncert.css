@@ -202,7 +202,7 @@
 .text-seen {
     width: 80%;
     height: 80vh;
-    display: flex; /* Ensure flexbox for centering */
+    display: none; /* Ensure flexbox for centering */
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -244,6 +244,7 @@
     margin-top: 5%;
     left: 60%;
     transform: translate(-70%, -50%);
+    
     /* background-color: #1031ec; */
 }
 

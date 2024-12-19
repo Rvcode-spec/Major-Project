@@ -37,7 +37,7 @@ const classSelect = document.getElementById("classSelect");
         if (isClassSelected && isSubjectSelected && isLanguageSelected) {
             errorMessage.style.display = "none"; // Hide error if all are selected
             textBox.classList.add("active"); // Show the text box
-            alert("All selections are complete. Proceeding!");
+            // alert("All selections are complete. Proceeding!");
             // Optionally redirect to another page
             // window.location.href = "nextpage.html";
         } else {
