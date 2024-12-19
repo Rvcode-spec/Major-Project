@@ -127,9 +127,9 @@
     height: auto;
     position: absolute;
     background-size: cover; /* Optional */
-    background-repeat: no-repeat; /* Optional */
+    background-position: center;
+   
 }
-
 
 
 .title-box{
@@ -199,21 +199,27 @@
     margin-top: 10px;
 }
 
-.text-seen{
-
+.text-seen {
     width: 80%;
-    height: auto;
-    display: none;
+    height: 80vh;
+    display: flex; /* Ensure flexbox for centering */
     justify-content: center;
     align-items: center;
-    position: absolute; 
+    position: absolute;
     margin-left: 25px;
-    top: 25%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
     border: 2px solid transparent;
     background-color: #ec1010;
+    overflow: hidden;
+}
+
+#pdfViewer {
+    width: 100%; /* Fill the width of the parent container */
+    height: 100%; /* Fill the height of the parent container */
+    border: none; /* Remove default border for the iframe */
 }
 
 .text-seen.active {
@@ -228,6 +234,40 @@
 }
 
 
+.footer-box{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+    left: 60%;
+    transform: translate(-70%, -50%);
+    /* background-color: #1031ec; */
+}
+
+.footer-box button{
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 
+    0 0 1em rgb(209, 237, 67), 
+    0 0 0.2em rgb(255, 247, 0);
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: rgb(155, 223, 28);
+    
+}
+
+.footer-box button:hover{
+
+    color: #fff;
+    background-color: rgb(21, 214, 205);
+}
 
 
 
