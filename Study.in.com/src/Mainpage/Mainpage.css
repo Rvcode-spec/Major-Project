@@ -104,7 +104,13 @@
 }
 
 
+.main-img-body img{
 
+        width: 100%;
+        height: auto;
+        position: absolute;
+        background-position: center;
+}
 
 
 

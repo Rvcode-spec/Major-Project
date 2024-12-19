@@ -133,6 +133,15 @@
     
 }
 
+#main-img img{
+
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-size: cover; /* Optional */
+    background-position: center;
+}
+
 
 /* Login-Container full Code and Responsive */
 
