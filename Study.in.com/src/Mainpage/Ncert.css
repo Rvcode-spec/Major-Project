@@ -163,7 +163,7 @@
 
 .class-select, 
 .subject-select, 
-.language-select {
+.Chapert-select {
         width: 25%;
         height: 65%;
         display: flex;
@@ -177,10 +177,18 @@
 
 .class-select option,
 .subject-select option,
-.language-select option {
+.Chapert-select option {
     background-color: rgb(212, 224, 224); /* Background color */
     margin: 20px;
     color: black; /* Text color */
+}
+
+
+#languageSelectContainer{
+
+        outline: none;
+        border: none;
+        border-radius: 4px;
 }
 
 .fa-magnifying-glass{
@@ -227,10 +235,18 @@
 }
 
 .error-message {
-    color: red;
-    font-size: 14px;
+    color: rgb(240, 247, 248);
+    font-size: 24px;
     margin-top: 10px;
     display: none; /* Initially hidden */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -70%);
+
 }
 
 
