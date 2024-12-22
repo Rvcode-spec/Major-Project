@@ -2,8 +2,12 @@ const classData = {
     6: {
         subjects: {
             hindi: ["Chapter-2", "Malhar"],
-            english: ["English Reader", "Grammar Workbook"],
-            mathematicsenglish: ["Chapter - 1", "Math Practice"],
+            english: [],
+           mathematics: ["Prelims", "Chapter - 1" , "Chapter - 2" , "Chapter - 3", "Chapter - 4",
+            "Chapter - 5" , "Chapter - 6", "Chapter - 7" , "Chapter - 8", "Chapter - 9", "Chapter - 10"],
+
+            vocational: ["Prelims Info", "Chapter - 1" , "Chapter- 2" , "Chapter- 3", "Chapter- 4", 
+            "Chapter- 5" , "Chapter- 6"],
             
         }
     },
