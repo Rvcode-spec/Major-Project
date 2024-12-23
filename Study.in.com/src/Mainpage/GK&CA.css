@@ -109,12 +109,29 @@
         width: 100%;
         height: auto;
         position: absolute;
+        z-index: 999;       
         background-position: center;
 }
 
+.main-container{
+
+        display: flex;
+        background-color: #e21515;
+}
 
 
+.jan-box{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 57px;
+        font-size: 1.3rem;
+        margin-top: 15px;
+        border-radius: 6px;
+        /* background-color: rgb(189, 181, 194); */
+}
 
 
 
