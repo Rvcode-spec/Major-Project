@@ -14,3 +14,19 @@ for (let year = startYear; year <= endYear; year++) {
         }
     }
 }
+
+function openModal(month) {
+    // Show modal and overlay
+    document.getElementById('modal-overlay').style.display = 'block';
+    document.getElementById('modal').style.display = 'block';
+    document.getElementById('modal-content').innerText = `You clicked on ${month} 2024.`;
+}
+
+function closeModal() {
+    // Hide modal and overlay
+    document.getElementById('modal-overlay').style.display = 'none';
+    document.getElementById('modal').style.display = 'none';
+}
+
+// Close modal when clicking outside the modal content
+document.getElementById('modal-overlay').addEventListener('click', closeModal);
