@@ -114,7 +114,68 @@
 
 
 
-
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+        .nav-box {
+          flex-direction: column;
+        }
+      
+        .logo {
+          font-size: 2rem;
+        }
+      
+        .navigation-bar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .navigation-bar ul {
+          flex-direction: column;
+          margin: 0;
+          gap: 5px;
+        }
+      
+        .navigation-bar a {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      
+        .nav-language {
+          margin-left: 0;
+          width: 90%;
+        }
+      
+        .user i {
+          font-size: 1rem;
+          height: 50px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .logo {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+      
+        .navigation-bar ul {
+          width: 100%;
+        }
+      
+        .navigation-bar a {
+          font-size: 0.8rem;
+        }
+      
+        .nav-language {
+          font-size: 0.9rem;
+          height: 50px;
+        }
+      
+        .user i {
+          font-size: 0.8rem;
+          height: 45px;
+        }
+      }
+      
 
 
 
